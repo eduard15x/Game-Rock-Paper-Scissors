@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chalenges</title>
+        <link rel="stylesheet" href="style-RPS.css">
+    </head>
+
+    
+    
+    
+    
+    <body>
+        <h1>Rock-Paper-Scissors Game</h1>
+
+        <div class="form-for-players">
+            <h2 id="form-title">Register</h2>
+
+            <label class="form-name">Player 1</label>
+            <input type="text" class="input-form" placeholder="Complete your player1-name">
+            
+            <label class="form-name">Player 2</label>
+            <input type="text" class="input-form" placeholder="Complete your player2-name">
+            
+            <button id="btn-form">START GAME</button>
+        </div>
+
+        <div class="alert">
+            <p>You need to complete both inputs with the players name</p>
+            <button id="btn-alert">OK</button>
+        </div>
+
+        <div class="rps-section">
+
+            <div class="start-game">
+                <div class="start-game-roll">
+                    <button id="btn-roll">ROLL NOW</button>
+                    <p id="p-winner">The winner is: </p>
+                </div>
+
+                <table class="start-game-two">
+                    <thead>
+                        <tr>
+                            <th class="th-players">Player 1</th>
+                            <th class="th-players">Player 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td-players">0</td>
+                            <td class="td-players">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="players">
+                <div class="player-container-1">
+                    <h2 id="player-name-one">Player 1</h2>
+                    <p class="image-name">ROCK</p>
+                    <div class="img-container">
+                        <img src="/images/rock.png" alt="rock-hand" class="img-for-game">
+                    </div>
+                </div>
+
+                <div class="player-container-2">
+                    <h2 id="player-name-two">Player 2</h2>
+                    <p class="image-name">SCISSORSS</p>
+                    <div class="img-container">
+                        <img src="/images/scissors.png" alt="scissors-hand" class="img-for-game">
+                    </div>
+                </div>
+             </div>
+        </div>
+
+        <script src="script-RPS.js"></script>
+    </body>
+</html>

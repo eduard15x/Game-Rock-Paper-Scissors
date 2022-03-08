@@ -1,0 +1,185 @@
+/*Rock Paper Scissors Game*/
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(192, 179, 203);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color:rgb(69, 63, 77);
+
+}
+/*Alert box*/
+.alert {
+    display: none;
+    width: 30%;
+    position: absolute;
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    left: 35%;
+    top: 30%;
+    font-weight: bold;
+}
+#btn-alert {
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Form section */
+.form-for-players {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 8px;
+    width: 30%;
+    align-items: center;
+    margin: auto;
+    font-size: 20px;
+    background:linear-gradient(180deg, #4f2020 25%, #603b40) ;
+    box-shadow: 0px 0px 4px 1px #805328;
+    color: #b8af9e;
+}
+
+.form-name {
+    margin: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #b8af9e;
+}
+
+.input-form {
+    width: 70%;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #bf9f97;
+    color: #4f2020;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px 2px #361609;
+}
+::placeholder {
+    font-size: 12px;
+    color: #93746c;
+}
+
+#btn-form {
+    margin: 25px;
+    background-color: black;
+    color: #142a31;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    padding: 3px 6px;
+    background-color: #f8b3bce7;
+    box-shadow: 0px 0px 5px 2px #4f2020;
+    cursor: pointer;
+}
+
+
+/* Game section */
+.rps-section {
+    width: 75%;
+    display: none;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    background: linear-gradient(180deg, #c48845 20%, #ebbe8c) ;
+}
+
+.start-game {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+}
+.start-game-roll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(51, 21, 13);
+    border-radius: 5px;
+    background: linear-gradient(180deg, #230e05 0%, #6e3322);
+    margin-right: 50px;
+    padding: 10px;
+    color: wheat;
+}
+.start-game-two {
+    background: linear-gradient(180deg, #230e05 0%, #6e3322);
+    color: wheat;
+    margin-left: 50px;
+}
+#btn-roll {
+    background-color: #c48845;
+    color: wheat;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 2px rgb(68, 33, 10);
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+
+}
+
+#p-winner {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:  15px;
+}
+
+
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td {
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
+
+
+.players {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-name {
+    font-size: 18px;
+    font-weight: 600;
+    color:#361609;
+    border-bottom: 2px solid saddlebrown;
+    margin: 10px 25px;
+}
+
+.img-container {
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.img-for-game {
+    border: 1px solid #8c683f;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+
+
+
